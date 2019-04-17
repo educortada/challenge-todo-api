@@ -7,7 +7,11 @@ let Todo = new Schema({
   },
   body: {
     type: String
-  }
+  },
+  status: {
+    type: String,
+    default : 'todo',
+  },
 },{ timestamps: true }
 );
 
